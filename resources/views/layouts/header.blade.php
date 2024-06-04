@@ -9,12 +9,12 @@
   <link rel="stylesheet" href="{{ asset('asset/css/mdi/css/materialdesignicons.min.css') }}">
   <link rel="stylesheet" href="{{ asset('asset/css/css/vendor.bundle.base.css') }}">
   <!-- endinject -->
-  <!-- plugin css for this page -->
-  <!-- End plugin css for this page -->
   <!-- inject:css -->
   <link rel="stylesheet" href="{{ asset('asset/css/style.css') }}">
-  <!-- endinject -->
-  {{-- <link rel="shortcut icon" href="../../images/favicon.png" /> --}}
+  <!-- sweetalert2 -->
+  <link rel="stylesheet" href="{{ asset('asset/css/sweetalert2.min.css') }}">
+
+  <script src="{{ asset('asset/js/jquery.js') }}"></script>
 </head>
 
 <body>
@@ -68,19 +68,13 @@
         <li class="nav-item">
           <a class="nav-link" href="pages/charts/chartjs.html">
             <i class="mdi mdi-chart-pie menu-icon"></i>
-            <span class="menu-title">Charts</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="pages/tables/basic-table.html">
-            <i class="mdi mdi-grid-large menu-icon"></i>
-            <span class="menu-title">Tables</span>
+            <span class="menu-title">Categoria</span>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="pages/icons/mdi.html">
             <i class="mdi mdi-emoticon menu-icon"></i>
-            <span class="menu-title">Icons</span>
+            <span class="menu-title">Salir</span>
           </a>
         </li>
       </ul>
@@ -115,7 +109,7 @@
           <ul class="navbar-nav navbar-nav-right">
             <li class="nav-item nav-profile dropdown">
               <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="profileDropdown">
-                <img src="{{ asset('asset/img/users.jpg') }}" alt="profile"/>
+                <img src="{{ asset('asset/img/avatar0.jpg') }}" alt="profile"/>
                 <span class="nav-profile-name">Eleanor Richardson</span>
               </a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
@@ -190,6 +184,7 @@
    <script src="{{ asset('asset/js/jquery.cookie.js') }}"></script>
    <script src="{{ asset('asset/js/dashboard.js') }}"></script>
 
+   <script src="{{ asset('asset/js/sweetalert2.all.min.js') }}"></script>
 </body>
 
 </html>

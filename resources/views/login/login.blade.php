@@ -1,8 +1,23 @@
-@extends('layouts/header')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>@yield('title')</title>
+  <!-- base:css -->
+  <link rel="stylesheet" href="{{ asset('asset/css/mdi/css/materialdesignicons.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('asset/css/css/vendor.bundle.base.css') }}">
+  <!-- endinject -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="{{ asset('asset/css/style.css') }}">
+  <!-- sweetalert2 -->
+  <link rel="stylesheet" href="{{ asset('asset/css/sweetalert2.min.css') }}">
 
-@section('title', 'Cards basic   - UI elements')
+  <script src="{{ asset('asset/js/jquery.js') }}"></script>
+</head>
 
-@section('content')
+<body>
 
 <div class="container-scroller d-flex">
   <div class="container-fluid page-body-wrapper full-page-wrapper d-flex">
@@ -47,3 +62,6 @@
   <script src="{{ asset('asset/js/off-canvas.js') }}"></script>
   <script src="{{ asset('asset/js/hoverable-collapse.js') }}"></script>
   <script src="{{ asset('asset/js/template.js') }}"></script>
+</body>
+
+</html>
